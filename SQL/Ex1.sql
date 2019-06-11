@@ -1,5 +1,3 @@
-SELECT * FROM celebs;
-
 CREATE TABLE celebs (
    id INTEGER, 
    name TEXT, 
@@ -18,3 +16,20 @@ VALUES (3, 'Jeremy Lin', 26);
 
 INSERT INTO celebs (id, name, age) 
 VALUES (4, 'Taylor Swift', 26); 
+
+SELECT * FROM celebs;
+
+ALTER TABLE celebs
+ADD COLUMN twitter_handle TEXT;
+
+SELECT * FROM celebs;
+
+SET twitter_handle = '@taylorswift13'
+WHERE id = 4;
+
+SELECT * FROM celebs;
+
+DELETE FROM celebs 
+WHERE twitter_handle IS NULL;
+
+SELECT * FROM celebs;
