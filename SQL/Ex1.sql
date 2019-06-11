@@ -24,6 +24,7 @@ ADD COLUMN twitter_handle TEXT;
 
 SELECT * FROM celebs;
 
+UPDATE celebs
 SET twitter_handle = '@taylorswift13'
 WHERE id = 4;
 
